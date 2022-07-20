@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/views/index.html')
 });
 
-let url = "mongodb+srv://meowfitchoo:o27Ohlrhw2b5l0Ze@cluster0.cvl7hca.mongodb.net/?retryWrites=true&w=majority";
+let url = "connect your mongo db using url here";
 mongoose.connect(url, {
     useNewUrlParser: true,
     useUnifiedTopology: false
