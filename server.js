@@ -114,8 +114,6 @@ app.get("/api/users/:id/logs", (req, res) => {
                 console.log(logs);
                 let filteredLogs = logs
                     .filter(log => {
-                        // const formattedLogDate = (new Date(log.date)).toISOString().split('T')[0];
-                        // console.log(formattedLogDate);
                         return true
                     })
                 filteredLogs = filteredLogs.map((item) => {
